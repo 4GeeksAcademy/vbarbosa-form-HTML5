@@ -11,129 +11,141 @@
             <title>My Pyament Form</title>
         </head>
 
-        <body>
-            <div class="container">
-                <div class="card w-100">
-                    <div class="card-header">
-                      <h3>Payment form example</h3>
-                    </div>
+        <body class="min-vw-50">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
 
-                    <div class="card-body p-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
+                    <!-- Start of card -->
+                    <div class="card"> 
+                        <div class="card-header">
+                          <h3 style="font-size:4vw;">Payment form example</h3>
+                        </div>
+    
+                        <!-- Start card body -->
+                        <div class="card-body p-4">
+
+                            
+                            <!-- First row-->
+                            <div class="row">
+
+                                <!-- Alert tag -->
+                                <div class="col">
                                     <div class="alert alert-danger" role="alert">Some fields are missing</div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-5">
-                                        <label for="inputZip" class="form-label">Card#</label>
-                                        <input type="tel" inputmode="numeric" maxlength="19" minlength="13" class="form-control" placeholder="XXXXXXXXXXXXXXXXXXXX" aria-label="card">
-                                    </div>
-                                    <div class="col-3">
-                                        <label for="inputZip" class="form-label">CVC#</label>
-                                        <input type="tel" maxlength="4" minlength="3" class="form-control" placeholder="0000" aria-label="cvc">
-                                    </div>
-                                    <div class="col-4">
-                                        <label for="inputZip" class="form-label">Amount</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text">$</span>
-                                            <input type="tel" class="form-control" aria-label="amount">
-                                        </div>
+                                <div class="col-sm-12 col-lg-5 mt-3">
+                                    <label for="inputZip" class="form-label">Card#</label>
+                                    <input type="tel" inputmode="numeric" maxlength="19" minlength="13" class="form-control" placeholder="XXXXXXXXXXXXXXXXXXXX" aria-label="card">
+                                </div>
+                                <div class="col-sm-6 col-lg-3 mt-3">
+                                    <label for="inputZip" class="form-label">CVC#</label>
+                                    <input type="tel" maxlength="4" minlength="3" class="form-control" placeholder="0000" aria-label="cvc">
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mt-3">
+                                    <label for="inputZip" class="form-label">Amount</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="tel" class="form-control" aria-label="amount">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="inputZip" class="form-label">First Name</label>
-                                        <input type="text" class="form-control" aria-label="Nombre">
-                                    </div>
-                                    <div class="col-12 p-3">
-                                        <label for="inputCity" class="form-label">Ciudad</label>
-                                        <input type="text" class="form-control" id="inputCity">
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                We accept:
-                                            </div>
+
+                            <!-- Second row -->
+                             <div class="row">
+                                <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                                    <label for="inputZip" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" aria-label="Nombre">
+                                </div>
+
+                                <div class="col-12 col-sm-6 col-lg-6 mt-2">
+                                    <label for="inputZip" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" aria-label="Apellido">
+                                </div>
+                             </div>
+
+                             <!-- Third row -->
+                            
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-4 col-lg-6 mt-3">
+                                            <label for="inputCity" class="form-label">Ciudad</label>
+                                            <input type="text" class="form-control" id="inputCity">
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12 p-3">
-                                                <div class="form-check form-check-inline">
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="FOP1">
-                                                        <label class="form-check-label" for="inlineRadio1">
-                                                            <i class="fa-brands fa-cc-mastercard" style="font-size: 30px;"></i>
-                                                        </label>
-                                                      </div>
-                                                      <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="FOP2">
-                                                        <label class="form-check-label" for="inlineRadio2">
-                                                            <i class="fa-brands fa-cc-visa" style="font-size: 30px;"></i>
-                                                        </label>
-                                                      </div>
-                                                      <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="FOP3">
-                                                        <label class="form-check-label" for="inlineRadio3">
-                                                            <i class="fa-brands fa-cc-paypal" style="font-size: 30px;"></i>
-                                                        </label>
-                                                      </div>
-                                                      <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="FOP4">
-                                                        <label class="form-check-label" for="inlineRadio4">
-                                                            <i class="fa-brands fa-cc-diners-club" style="font-size: 30px;"></i>
-                                                        </label>
+
+                                        <div class="col-12 col-sm-4 col-lg-3 mt-3">
+                                            <label for="inputZip" class="form-label">State</label>
+                                            <select class="form-select" aria-label="state">
+                                                <option selected>Pick a state</option>
+                                                <option value="1">Barcelona</option>
+                                                <option value="2">Madrid</option>
+                                                <option value="3">Valencia</option>
+                                              </select>
+                                        </div>
+
+                                        <div class="col-12 col-sm-4 col-lg-3 mt-3">
+                                            <label for="inputZip" class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12 mt-3">
+                                            We accept:
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-6 mt-3">
+
+                                                    <div class="form-check form-check-inline" style="font-size:3vh;">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="FOP1">
+                                                            <label class="form-check-label" for="inlineRadio1">
+                                                                <i class="fa-brands fa-cc-mastercard"></i>
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="FOP2">
+                                                            <label class="form-check-label" for="inlineRadio2">
+                                                                <i class="fa-brands fa-cc-visa"></i>
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="FOP3">
+                                                            <label class="form-check-label" for="inlineRadio3">
+                                                                <i class="fa-brands fa-cc-paypal"></i>
+                                                            </label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="FOP4">
+                                                            <label class="form-check-label" for="inlineRadio4">
+                                                                <i class="fa-brands fa-cc-diners-club"></i>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        <span style="font-size: 12px;">Add any notes here.</span>
                                                       </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <label for="inputZip" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" aria-label="Apellido">
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-6 p-3">
-                                                <label for="inputZip" class="form-label">State</label>
-                                                <select class="form-select" aria-label="state">
-                                                    <option selected>Pick a state</option>
-                                                    <option value="1">Barcelona</option>
-                                                    <option value="2">Madrid</option>
-                                                    <option value="3">Valencia</option>
-                                                  </select>
-                                            </div>
-                                            <div class="col-6 p-3">
-                                                <label for="inputZip" class="form-label">Postal Code</label>
-                                                <input type="text" class="form-control" id="inputZip">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            <span style="font-size: 12px;">Add any notes here.</span>
-                                          </div>
-                                    </div>
-                                </div>
+
+                            <!-- End of card body-->
+                        </div>
+
+                        <!-- Buttons section -->
+                        <div class="card-footer text-muted">
+                            <div class="d-flex flex-row-reverse gap-2 d-md-flex">
+                                <button class="btn btn-primary me-md-2" type="button">Send</button>
+                                <button class="btn btn-secondary" type="button">Cancel</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer text-muted">
-                        <div class="d-flex flex-row-reverse gap-2 d-md-flex">
-                            <button class="btn btn-primary me-md-2" type="button">Send</button>
-                            <button class="btn btn-secondary" type="button">Cancel</button>
-                        </div>
-                    </div>
-                  </div>
+                </div>
+                
             </div>
 
 
